@@ -1,0 +1,18 @@
+main: de.luc1412.em.EasyMaintenance
+name: EasyMaintenance
+version: 1.2.2
+author: Luc1412
+softdepend: [ProtocolLib]
+description: The easiest way to made Maintenance!
+website: https://twitter.com/luc141201
+
+commands:
+   easymaintenance:
+      description: Manage the maintenance.
+      aliases: [em,maintenance]
+
+permissions:
+   em.use:
+      description: Use the EasyMaintenance Command
+   em.bypass:
+      description: Get on the server while them is in maintenance

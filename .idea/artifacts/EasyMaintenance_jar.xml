@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="EasyMaintenance:jar">
+    <output-path>$PROJECT_DIR$/../../../../../../Minecraft/Server/1.12 Server/plugins</output-path>
+    <root id="archive" name="EasyMaintenance.jar">
+      <element id="module-output" name="EasyMaintenance" />
+    </root>
+  </artifact>
+</component>
