@@ -1,0 +1,181 @@
+# ##############################################################################
+# ############################# THANK YOU FOR USING ############################
+# ######################### EasyMaintenance BY LUC1412 #########################
+# ##############################################################################
+# ################################ MAIN CONFIG #################################
+# ##############################################################################
+#
+#
+# WENN DU DAS AKTIVIERST FUNKTIONIERT DAS PLUGIN NICHT MEHR! COMMING SOON <3
+BungeeMode:
+  Enabled: false
+#  CommunicationPort: 1412
+#  CommunicationHost: 'localhost'
+#
+# Wenn es auf true ist überprüft das Plugin automatisch, ob eine neue Version verfügbar ist und benachrichtigt dich dann.
+Updater: true
+#
+DebugLog: false
+#
+# Setzte die Art des Präfixes!
+# 1 = "&8|&1Easy&4Maintenance&8| &3->&r "
+# 2 = "&7[&1Easy&4Maintenance&7] &r "
+# 3 = "&7(&1Easy&4Maintenance&7) &r "
+# 4 = "&2【&1Easy&4Maintenance&2】&r "
+# 5 = Eigener Prefix (Nur für die Donator Version)
+PrefixStyle: 1
+#
+# Setzte den Style der Nachrichten!
+# 1 = Schwarz/Weiß --- Modern und einfach
+# 2 = Dunkelblau/Dunkelrot --- Der EasyMaintenance Style
+# 3 = Schwarz/Dunkelrot --- Modern and Mächtig
+# 4 = Dunkelblau/Dunkelgrün --- Modern and Entspannt
+# 5 = Dunkelrot/Dunkelgrün --- Weihnachts Style
+MessagesStyle: 1
+#
+# Spiel Musik, wenn du /EasyMaintenance eingibst
+PlayMusic: true
+#
+GUI:
+  #
+  # Öffne das GUI mit /em. Das ist ein einfacher Weg um das Plugin zu steuern.
+  # !!!DIESE FUNKTION IST NUR IN DER 1.9+ VERFÜGBAR!!!
+  Enabled: true
+  #
+  # 0 = Weiß
+  # 1 = Orange
+  # 2 = Magenta
+  # 3 = Hellblau
+  # 4 = Gelb
+  # 5 = Hellgrün
+  # 6 = Rosa
+  # 7 = Grau
+  # 8 = Hellgrau
+  # 9 = Türkis
+  # 10 = Violett
+  # 11 = Blau
+  # 12 = Braun
+  # 13 = Grün
+  # 14 = Rot
+  # 15 = Schwarz
+  DesignItemColor: 7
+#
+# Wenn es auf true ist, kannst du eine "maintenance-icon.png" Datei in deinen plugins/EasyMaintenance Ordner reinlegen.
+MaintenanceServerIcon: true
+#
+# Setzte den Standard Countdown in Sekunden, wenn du keine Argumente hinzufügst. Wenn du nur /EasyMaintenance toggel nutzt.
+DefaultCountdown: 10
+#
+# Wenn es auf true ist kannst du in der Actionbar sehen wie lange es dauert bis die Wartungsarbeiten starten.
+SendActionBar: true
+#
+# Wenn es auf true ist kannst du den Fortschritt des Countdowns und eine Nachricht in der BossBar sehen
+# !!!DIESE FUNKTION IST NUR IN DER 1.9+ VERFÜGBAR!!!
+BossBar: true
+BossBarSettings:
+  # Stelle die Farbe der BossBar ein. Verfügbare Farben:
+  # BLUE
+  # GREEN
+  # PINK
+  # PURPLE
+  # RED
+  # WHITE
+  # YELLOW
+  BossBarColor: RED
+  # Stelle die Art der BossBar ein. Verfügbare Arten:
+  # SOLID
+  # SEGMENTED_6
+  # SEGMENTED_10
+  # SEGMENTED_12
+  # SEGMENTED_20
+  BossBarStyle: SEGMENTED_20
+#
+# Personalisiere alle Nachrichten. Du kannst &-Farbcodes verwenden:
+# &0 - Schwarz
+# &1 – Dunkel Blau
+# &2 – Dunkel Grün
+# &3 – Dunkel Aqua
+# &4 – Dunkel Rot
+# &5 – Dunkel Lila
+# &6 - Gold
+# &7 - Grau
+# &8 - Dunkel Grau
+# &9 - Blau
+# &a - Grün
+# &b - Aqua
+# &c - Rot
+# &d – Helles Lila
+# &e - Gelb
+# &f - Weiß
+# &k - Verschleiert
+# &l – Fett gedruckt
+# &m - Durchgestrichen
+# &n - Unterstrichen
+# &o – Kursiv gedruckt
+# &r – Farbcodes zurücksetzen
+Messages:
+  ReloadConfig: '&2Die Config würde erfolgreich neu geladen!'
+  Usage: '&4Bitte nutze /EasyMaintenance help für Hilfe!'
+  NoPermission: '&4Du hast keine Rechte dieses Kommando auszuführen!'
+  KickMessage: '&4Der Server ist derzeit in Wartungsarbeiten!'
+  MaintenanceJoinMessage: '&4&l!Achtung! &eDer Server ist derzeit in &4&lWartungsarbeiten&e. Es können derzeit nur Teammitglieder joinen!'
+  InvalidNumber: '&4Die Zahl ist ungültig!'
+  ToggleOn: '&6Der Server ist nun in Wartungsarbeiten! &4Nur Spieler mit den „em.bypass“ Rechten können noch auf den Server!'
+  ToggleOff: '&6Der Server ist nun wieder im normalen Modus! &4Alle Spieler können nun auf den Server kommen!'
+  SkipTimeToHigh: '&4Die Skip Zeit ist höher als der Countdown!'
+  # In TimeWasSkipped kannst du %seconds% nutzen. Es wird mit den Sekunden die übersprungen werden ersetzt.
+  TimeWasSkipped: '&2Der Countdown würde erfolgreich um %seconds% Sekunden verkürzt!'
+  # In BossBar kannst du %ftime% nutzen. Es wird mit der formatieren Zeit bis die Wartungsarbeiten starten ersetzt. Formatierung: hh:mm:ss
+  BossBar: '&6&lDie Wartungsarbeiten starten in %ftime%'
+  ServerPingName: '&1&lEasy&4&lMaintenance'
+  MaintenanceMOTD: '&4&lDer Server ist derzeit in &1&lEasy&4&lMaintenance&4&l!'
+  # In CooldownMessage kannst du %seconds% nutzen. Es wird mit der Zeit bis der Spieler den Command wiederholt eingeben kann ersetzt.
+  CooldownMessage: '&4Du musst &e%seconds% Sekunden &4warten bis du diesen Command wiederholt eingeben kannst!'
+#
+  Countdown:
+      CountdownIsNotRunning: '&4Der Countdown läuft derzeit nicht!'
+      CountdownIsRunning: '&4Der Countdown läuft schon!'
+      CountdownStopped: '&4Der Countdown für die Wartungsarbeiten wurde gestoppt!'
+# In CountdownMinutes/Seconds/Seconds1 kannst du %time% nutzen. Es wird mit den Sekunden bis der Countdown startet ersetzt.
+      CountdownMinutes: '&eDie Wartungsarbeiten starten in&6 %time% &eMinuten!'
+      CountdownSeconds: '&eDie Wartungsarbeiten starten in&6 %time% &eSekunden!'
+      CountdownSeconds1: '&eDie Wartungsarbeiten starten in&6 %time% &eSekunden!'
+#
+  ActionBar:
+# In CountdownRunning kannst du %ftime% nutzen. Es wird mit der formatieren Zeit bis die Wartungsarbeiten starten ersetzt. Formatierung: hh:mm:ss
+      CountdownRunning: '&2&n&lDie Wartungsarbeiten starten in %ftime%'
+      CountdownStopped: '&4&n&l&mDie Wartungsarbeiten starten in XX:XX'
+#
+  ListHoverText:
+    Line1: '&7&l«======================================»'
+    Line2: '&7&l| &3&lDer Server ist derzeit in &4&lWartungsarbeiten                        &7&l|'
+    Line3: '&7&l| &3&lDu kannst Informationen über                                      &7&l|'
+    Line4: '&7&l| &3&ldie Wartungsarbeiten in unserem Forum bekommen: &9&lforum.luc1412.net &7&l|'
+    Line5: '&7&l«======================================»'
+#
+  GUI:
+    GreenStatusItemName: '&2&lNormaler Modus'
+    RedStatusItemName: '&4&lWartungsarbeiten Modus'
+    ButtonStartItemName: '&a&lStarte die Wartungsarbeiten'
+    ButtonCloseItemName: '&4&lSchließe das GUI'
+    ButtonStopItemName: '&c&lStoppe die Wartungsarbeiten'
+    ButtonCancelItemName: '&4&lBreche die Wartungsarbeiten ab'
+    ButtonSkipItemName: '&6&lÜberspringe den Wartungsarbeiten Countdown'
+    ServerIsInMaintenance: '&4Der Server ist schon in Wartungsarbeiten!'
+    ServerIsNotInMaintenance: '&4Der Server ist nicht in Wartungsarbeiten!'
+#
+# Individualisiere alle Sounds. Bitte nutze einen von:
+# IN 1.8.x: http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Sound.html
+# IN 1.9.x - 1.12:  https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+# Die Groß- und Kleinschreibung ist unwichtig.
+# Der 2. Parameter ist der Pitch/die Geschwindigkeit des Sounds.
+# 1 = normale Geschwindigkeit
+# 0.5-0.9 = langsamer
+# 1.1-1.5 = schneller
+# Du musst es so nutzen: 'Dein_Sound:Pitch'
+Sounds:
+  CountdownRunning: 'ENTITY_EXPERIENCE_ORB_PICKUP:0.5'
+  CountdownStopped: 'BLOCK_ANVIL_DESTROY:0.7'
+  MaintenanceStart: 'Entity_Enderdragon_Death:1'
+  MaintenanceEnd: 'ENTITY_WITHER_DEATH:0.5'
+  GUIClickSound: 'BLOCK_DISPENSER_FAIL:1.5'
